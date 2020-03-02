@@ -1,38 +1,145 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+header {
+  background: #2980b9;
+  padding: 20px;
+}
+
+.mt2 {
+  margin-top: 2rem;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: auto;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center-text {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mp2 {
+  margin-bottom: 2rem;
+}
+
+.mp1 {
+  margin-bottom: 1rem;
+}
+
+.grid img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.grid a,
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  border-color: #007bff;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+}
+
+form input[type='text'] {
+  padding: 0.375rem 5rem;
+  margin: 10px;
+}
+
+form input[type='submit'] {
+  padding: 0.1rem 0.75rem;
+  margin: 10px;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.header ul {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btnlink {
+  margin-left: 10px;
+  background-color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.centerthisimaeg {
+  display: block;
+  margin: auto;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mt2 {
+  margin-top: 2rem;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.mt5 {
+  margin-top: 5rem;
+}
+
+.avatar img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.mr1 {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
   }
 }
